@@ -1,0 +1,751 @@
+/* Custom styles */
+.navbar {
+    background-color: #f8f9fa;
+    box-shadow: 0 2px 4px rgba(0,0,0,.1);
+}
+
+.navbar-brand.logo {
+    font-weight: bold;
+    color: #007bff;
+}
+
+.nav-link {
+    color: #333;
+    font-weight: 500;
+}
+
+.nav-link:hover {
+    color: #007bff;
+}
+
+#hero {
+    background-color: #f1f3f5;
+}
+
+#hero h1 {
+    color: #333;
+}
+
+#hero h2 {
+    color: #6c757d;
+}
+
+/* Add more custom styles as needed */
+/* part 1 start css */
+#section1{
+margin-top: 10%;
+font-size: 25;
+}
+/* ADD animation on text start on h3 */
+.h3 {
+    font-size: 1.75rem; /* Adjust the font size to your needs */
+    margin-bottom: 1rem; /* Adjust the margin as needed */
+}
+
+.animated-text {
+  
+    opacity: 0;
+    animation: fadeIn 2s forwards, colorChange 4s infinite alternate;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes colorChange {
+    0% {
+        color: #000;
+    }
+    50% {
+        color: #f00;
+    }
+    100% {
+        color: #00f;
+    }
+}
+/* ADD animation on text ends on h3 */
+
+/* ADD animation on women image start  */
+.animated-image {
+    animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-30px);
+    }
+    60% {
+        transform: translateY(-15px);
+    }
+}
+/* ADD animation on women image start  */
+
+
+/* ADD animation on text start on h1 */
+
+@keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+}
+
+@keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: rgb(0, 47, 255); }
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+h1.display-4.fw-bold {
+    overflow: hidden;
+    border-right: .15em solid rgb(21, 66, 178);
+    white-space: nowrap;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    letter-spacing: .15em;
+    animation: 
+        typing 3.5s steps(40, end),
+        blink-caret .75s step-end infinite,
+        fadeIn 1s ease-out;
+}
+/* ADD animation on text ends on h1 */
+
+/* part 1 start css */
+
+/* about section start */
+
+/* ADD animation on text start on h2 */
+
+@keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+}
+
+@keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: rgb(0, 47, 255); }
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+h2.display-4.fw-bold {
+    overflow: hidden;
+    border-right: .15em solid rgb(21, 66, 178);
+    white-space: nowrap;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    letter-spacing: .15em;
+    animation: 
+        typing 3.5s steps(40, end),
+        blink-caret .75s step-end infinite,
+        fadeIn 1s ease-out;
+}
+/* ADD animation on text ends on h2 */
+.about{
+    margin-top: 4%;
+}
+.learn{
+    color:rgb(11,94,215);
+    font-weight: bold;
+    font-family: Georgia, 'Times New Roman', Times, serif;  
+    cursor: pointer;
+    font-size: 20px;
+}
+.learn:hover {
+    color: rgb(255, 0, 0); /* Change to your desired hover color */
+    cursor: pointer;
+}
+.intro{
+    margin-top: 15px;
+    /* color:#333; */
+    color: #6c757d;
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.skill_name {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.btn-hover-effect:hover {
+    background-color: #2e83de; /* Change to desired hover background color */
+    border-color: #0056b3; /* Change to desired hover border color */
+    color: white; /* Change to desired hover text color */
+    transition: background-color 0.3s ease, border-color 0.3s ease, color 0.3s ease; /* Smooth transition effect */
+}
+/* about section ends*/
+
+/* what i do start section */
+#do{
+    margin-top: 5%;
+}
+/* animation on text */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.animation {
+    animation: fadeIn 2s ease-in-out;
+}
+
+
+
+.icon-box {
+    border: 2px solid #2e83de;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+}
+/* what i do ends section */
+
+/* part 3 start */
+/* General styles for the timeline */
+.timeline .timeline-content {
+    padding: 20px 30px;
+    background-color: #f9f9f9; /* Light background color */
+    position: relative;
+    border-radius: 6px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.timeline {
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px 0;
+    overflow: hidden; /* Ensure no overflow */
+}
+.timeline::after {
+    content: '';
+    position: absolute;
+    width: 6px;
+    background-color: #00ADEF;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    margin-left: -3px;
+    z-index: 1; /* Ensure the line is above content */
+}
+.timeline .timeline-container {
+    padding: 10px 40px;
+    position: relative;
+    width: 50%;
+    z-index: 2; /* Ensure containers are above the line */
+    box-sizing: border-box; /* Include padding in width calculation */
+}
+.timeline .timeline-container.left {
+    float: left; /* Float containers for side-by-side layout */
+    clear: both; /* Clear float for proper alignment */
+    animation: slide-in-left 1s ease-out forwards;
+}
+.timeline .timeline-container.right {
+    float: right; /* Float containers for side-by-side layout */
+    clear: both; /* Clear float for proper alignment */
+    animation: slide-in-right 1s ease-out forwards;
+}
+.timeline .timeline-content {
+    padding: 20px 30px;
+    background-color: white;
+    position: relative;
+    border-radius: 6px;
+}
+.timeline .timeline-container.left::before {
+    content: " ";
+    height: 0;
+    position: absolute;
+    top: 22px;
+    width: 0;
+    right: -15px;
+    border: medium solid transparent;
+    border-width: 10px;
+    border-left-color: white;
+}
+.timeline .timeline-container.right::before {
+    content: " ";
+    height: 0;
+    position: absolute;
+    top: 22px;
+    width: 0;
+    left: -15px;
+    border: medium solid transparent;
+    border-width: 10px;
+    border-right-color: white;
+}
+.timeline .date {
+    padding: 10px;
+    background: #00ADEF;
+    color: white;
+    position: absolute;
+    top: 15px;
+    width: 100px;
+    text-align: center;
+    border-radius: 4px;
+    z-index: 3; /* Ensure dates are above containers */
+}
+.timeline .timeline-container.left .date {
+    right: -110px;
+}
+.timeline .timeline-container.right .date {
+    left: -110px;
+}
+
+/* Media Query for screens <= 768px width (tablet and mobile) */
+@media (max-width: 768px) {
+    .timeline::after {
+        display: none; /* Hide the vertical line */
+    }
+    .timeline .timeline-container {
+        width: 100%; /* Full width for containers on small screens */
+        padding: 20px; /* Adjust padding for better spacing */
+        float: none; /* Remove float for full width */
+        clear: both; /* Clear float for proper alignment */
+        animation: fadeInFromTop 1s ease forwards; /* Use fade in animation for small screens */
+    }
+    .timeline .timeline-container.left::before,
+    .timeline .timeline-container.right::before {
+        display: none; /* Hide the triangular pointers */
+    }
+    .timeline .timeline-content {
+        padding: 15px; /* Adjust content padding */
+    }
+    .timeline .date {
+        position: static; /* Remove absolute positioning for dates */
+        margin: 10px auto; /* Center align dates */
+        width: auto; /* Allow dates to expand as needed */
+    }
+}
+
+/* Sliding and fade-in animations */
+@keyframes slide-in-left {
+    from {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slide-in-right {
+    from {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInFromTop {
+    0% {
+        opacity: 0;
+        top: -20px; /* Start above */
+    }
+    100% {
+        opacity: 1;
+        top: 0; /* End at normal position */
+    }
+}
+
+ /* part 3 ends */
+
+
+ /* part 4 start  */
+ .edu-exp-section {
+    padding: 80px 0;
+    background-color: #f8f9fa;
+    cursor: pointer;
+}
+.section-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 40px;
+    position: relative;
+    padding-bottom: 15px;
+   
+}
+.section-title::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 50px;
+    height: 3px;
+    background-color: #007bff;
+}
+.timeline-item {
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    margin-bottom: 30px;
+    transition: all 0.3s ease;
+    opacity: 0;
+    transform: translateY(20px);
+}
+.timeline-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+}
+.timeline-item h3 {
+    color: #007bff;
+    margin-bottom: 10px;
+}
+.timeline-item .date {
+    font-weight: bold;
+    color: #6c757d;
+    margin-bottom: 10px;
+}
+.timeline-item p {
+    color: #495057;
+    margin-bottom: 0;
+}
+.animate {
+    animation: fadeInUp 0.6s ease forwards;
+}
+@keyframes fadeInUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+/*skills section start  */
+.skills-section {
+    background-color: #f8f9fa;
+    padding: 80px 0;
+}
+.section-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 50px;
+    text-align: center;
+    position: relative;
+}
+.section-title::after {
+    content: '';
+    position: absolute;
+    bottom: -15px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 50px;
+    height: 3px;
+    background-color: #007bff;
+}
+.skill-item {
+    margin-bottom: 30px;
+}
+.skill-info {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+.skill-name {
+    font-weight: 600;
+    color: #333;
+}
+.skill-percentage {
+    font-weight: 600;
+    color: #007bff;
+}
+.progress {
+    height: 10px;
+    background-color: #e9ecef;
+    border-radius: 5px;
+    overflow: hidden;
+}
+.progress-bar {
+    background-color: #007bff;
+    transition: width 1.5s ease-in-out;
+    position: relative;
+    overflow: hidden;
+}
+.progress-bar::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: linear-gradient(
+        45deg,
+        rgba(255, 255, 255, 0.15) 25%,
+        transparent 25%,
+        transparent 50%,
+        rgba(255, 255, 255, 0.15) 50%,
+        rgba(255, 255, 255, 0.15) 75%,
+        transparent 75%,
+        transparent
+    );
+    background-size: 20px 20px;
+    animation: stripes 1s linear infinite;
+}
+@keyframes stripes {
+    0% {
+        background-position: 0 0;
+    }
+    100% {
+        background-position: 20px 0;
+    }
+}
+/*skills section ends */
+
+ .services, .additional-services {
+        opacity: 0;
+        transform: translateY(20px);
+        transition: opacity 0.5s ease, transform 0.5s ease;
+    }
+    .services.animate, .additional-services.animate {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    .card {
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    }
+    .card-img-top {
+        transition: transform 0.3s ease;
+    }
+    .card:hover .card-img-top {
+        transform: scale(1.05);
+    }
+    .animation {
+        animation: fadeInUp 1s ease-out;
+    }
+    @keyframes fadeInUp {
+        from {
+            opacity: 0;
+            transform: translateY(20px);
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+/*skills section ends */
+
+    .services, .additional-services {
+        opacity: 0;
+        transform: translateY(20px);
+        transition: opacity 0.5s ease, transform 0.5s ease;
+    }
+    .services.animate, .additional-services.animate {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    .card {
+        transition: all 0.3s ease;
+        border: none;
+        border-radius: 15px;
+        overflow: hidden;
+    }
+    .card:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    }
+    .card::before {
+        content: '';
+        position: absolute;
+        top: -2px;
+        left: -2px;
+        right: -2px;
+        bottom: -2px;
+        background: linear-gradient(45deg, #ff00cc, #3333ff, #00ccff);
+        z-index: -1;
+        filter: blur(10px);
+        opacity: 0;
+        transition: opacity 0.3s ease;
+    }
+    .card:hover::before {
+        opacity: 1;
+    }
+    .card-img-container {
+        position: relative;
+        overflow: hidden;
+    }
+    .card-img-top {
+        transition: transform 0.3s ease;
+    }
+    .card:hover .card-img-top {
+        transform: scale(1.1);
+    }
+    .card-img-overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: rgba(0, 0, 0, 0.5);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        opacity: 0;
+        transition: opacity 0.3s ease;
+    }
+    .card:hover .card-img-overlay {
+        opacity: 1;
+    }
+    .card-img-overlay-content {
+        color: white;
+        text-align: center;
+    }
+    .card-body {
+        background: white;
+        border-radius: 0 0 15px 15px;
+    }
+    .animation {
+        animation: fadeInUp 1s ease-out;
+    }
+    @keyframes fadeInUp {
+        from {
+            opacity: 0;
+            transform: translateY(20px);
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+    .card-title {
+        color: #333;
+        font-weight: 600;
+        margin-bottom: 15px;
+    }
+    .card-text {
+        color: #666;
+    }
+/*skills section ends */
+
+/* form section start */
+#f{
+    margin-top: 7%;
+}
+/* form section ends*/
+
+/*footer section start */
+footer {
+    background-color: #f0f0f0; /* Light gray background */
+    padding-top: 8%;
+    padding-bottom: 7%;
+    font-family: Arial, sans-serif;
+}
+
+.animate-title, .animate-subtitle, .animate-contact {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 0.5s forwards;
+}
+
+.animate-subtitle {
+    animation-delay: 0.2s;
+}
+
+.animate-contact {
+    animation-delay: 0.4s;
+}
+
+@keyframes fadeInUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.social-icons {
+    margin-top: 1rem;
+}
+
+.social-icon {
+    display: inline-block;
+    margin: 0 10px;
+    font-size: 1.5rem;
+    color: #333;
+    transition: all 0.3s ease;
+}
+
+.social-icon:hover {
+    transform: scale(1.2);
+    color: #007bff;
+}
+
+h1, h3, p {
+    margin-bottom: 0.5rem;
+}
+
+h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+h3 {
+    font-size: 1.5rem;
+    color: #6c757d;
+}
+
+p {
+    font-size: 1rem;
+}
+
+
+.animate-title {
+    font-size: 2rem;
+    white-space: nowrap;
+    color: #333;
+    opacity: 0;
+    animation: slideIn 3s ease-out forwards, fadeIn 3s ease-out forwards;
+}
+
+@keyframes slideIn {
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+ 
+/*footer section ends*/
+
+
+   
